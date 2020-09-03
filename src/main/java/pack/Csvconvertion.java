@@ -15,7 +15,10 @@ import java.util.List;
 import java.util.Map;
 import java.io.FileReader;
 public class Csvconvertion {
-
+/*
+class Csvconverter has two functions convertion and Filereader convertion is used in the process of convertion of csv to json.
+Filereader is used to read from and to values to be printed ie( json format values to be printed).
+ */
 
 
     public void convertion (int index1,int index2,int index3) throws IOException {
