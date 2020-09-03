@@ -1,0 +1,6 @@
+1-Config.txt
+Add starting and ending point to print in the first and second line of config.txt.
+If full values needed to to print put 1 in the third line else 0 in the third line.
+
+2-filename.txt
+Give the path of the csv file

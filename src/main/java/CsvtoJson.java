@@ -2,7 +2,6 @@
 
 import pack.*;  //package pack contains a method convertion to convert csv to json
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class CsvtoJson {

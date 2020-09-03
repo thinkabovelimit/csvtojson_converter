@@ -25,12 +25,12 @@ public class Csvconvertion {
 
             File input = new File(str); //File input is given as str
 
-                CsvSchema csv = CsvSchema.emptySchema().withHeader();//Create an object of csvschema
+                CsvSchema csv = CsvSchema.emptySchema().withUseHeader(true);//Create an object of csvschema this tells the schema of the file withUserheader means take the first value of column as header
                 CsvMapper csvMapper = new CsvMapper();    //create an object of csvmapper to read an input file.
-                MappingIterator<Map<?, ?>> mappingIterator = csvMapper.reader().forType(Map.class).with(csv).readValues(input);  //Mappingiterator is used to map key value pairs
+                MappingIterator<Map<?, ?>> mappingIterator = csvMapper.reader(Map.class).with(csv).readValues(input);  //Mappingiterator is used to map key value pairs
+                    //with specifies the schema to which read
 
-                List<Map<?, ?>> list = mappingIterator.readAll();  //create a list containing all values
-                String list1=csvMapper.writeValueAsString(list);
+        List<Map<?, ?>> list = mappingIterator.readAll();  //mapping iterator returns list containing the list of json objects
                 if (index3 == 1){     //If input from config file is 1 print values from index1 to index2 as specified in the file
                     try {
                         for (int i = index1; i <= index2; i++)
