@@ -2,8 +2,8 @@
 
 import pack.*;  //package pack contains a method convertion to convert csv to json
 
-import java.io.IOException;
-import java.util.*;
+import java.io.IOException;  //
+import java.util.*;         //Import libraries from util
 
 public class CsvtoJson{
 
@@ -14,7 +14,7 @@ public class CsvtoJson{
 
         csvc.readfile();
         List list=csvc.convertion();    //Function for file convertion.
-        csvc.Writefile(list);
+        csvc.Writefile(list);           //write file to a file from the list
 
 
     }
