@@ -27,7 +27,7 @@ abstract class Read_Write{
     public void readfile() {
         FileReader reader = null;
         try {
-            reader = new FileReader("/home/krishnaprasad/IdeaProjects/CsvtoJson_Converter/src/main/resources/config.properties");
+            reader = new FileReader("../config.properties");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
